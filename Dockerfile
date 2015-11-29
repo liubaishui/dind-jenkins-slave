@@ -30,7 +30,7 @@ RUN apt-get update && apt-get install -y docker-engine=$DOCKER_VERSION && rm -rf
 
 ADD wrapdocker /usr/local/bin/wrapdocker
 RUN chmod +x /usr/local/bin/wrapdocker
-VOLUME /var/lib/docker
+#VOLUME /var/lib/docker
 
 
 # Make sure that the "jenkins" user from evarga's image is part of the "docker"
